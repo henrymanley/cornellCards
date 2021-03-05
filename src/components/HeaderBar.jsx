@@ -80,19 +80,21 @@ class HeaderBar extends React.Component {
             <React.Fragment>
                 <CssBaseline/>
                 <AppBar>
-                    <div className="App-Bar">
+                    <div>
                         <Toolbar>
-                            <div style={{width: '100%'}}>
+                            <div style={{minWidth: '300px', display: 'flex', display: 'flex',
+                                flexFlow:'row wrap',}}>
                                 <Link to ="/">
-                                <Typography style={{minWidth: '200px', fontSize: '35px'}}>Cards Against
+                                <Typography style={{minWidth: '200px', fontSize: '35px',  float: 'left'}}>Cards Against
                                     Cornellians</Typography>
                                 </Link>
                                 <ThemeProvider theme={Theme}>
                                     <div style={{
                                         marginRight: '0px',
                                         position: 'absolute', top: '15px',
-                                        right: '15px', maxHeight: '65px',
-                                        width: '50%', display: 'inline-flex'
+                                        right: '15px',
+                                        minWidth: '400px',
+                                        display: 'inline-flex'
                                     }}>
                                         <Link to = "./Start">
                                             <Typography variant="h6" style={{
@@ -100,7 +102,6 @@ class HeaderBar extends React.Component {
                                                 display: 'inline',
                                                 marginRight: '30px',
                                                 minWidth: '20px',
-                                                backgroundColor: 'red',
                                                 borderRadius: '30px'
                                             }}> <i> Start Game </i></Typography>
                                         </Link>
@@ -111,7 +112,6 @@ class HeaderBar extends React.Component {
                                                display: 'inline',
                                                marginRight: '30px',
                                                minWidth: '20px',
-                                               backgroundColor: 'green',
                                                borderRadius: '30px'
                                            }}> <i>Join Game </i></Typography>
                                        </Link>
@@ -120,7 +120,6 @@ class HeaderBar extends React.Component {
                                                 padding: '10px',
                                                 display: 'inline',
                                                 minWidth: '20px',
-                                                backgroundColor: 'blue',
                                                 borderRadius: '30px'
                                             }}> <i>Contribute</i></Typography>
                                         </Link>
