@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto+Mono:wght@300&display=swap');
+
+.App {
+  background-color: darkgray;
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.App-Bar{
+  color:white;
+  background-color: black;
+  font-family:'DotGothic16', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+a.visited{
+  text-decoration: none;
+  color: white;
+}
+a.hover{
+  text-decoration: bold;
+  color: white;
+}
