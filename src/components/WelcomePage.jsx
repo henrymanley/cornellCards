@@ -1,5 +1,6 @@
 import React from 'react';
-import AppBar from './HeaderBar'
+import HeaderBar from './HeaderBar'
+import GameBox from './GameBox'
 import {createMuiTheme, ThemeProvider} from "@material-ui/core/styles";
 
 export default function WelcomePage() {
@@ -14,7 +15,8 @@ export default function WelcomePage() {
     return (
         <div>
             <ThemeProvider theme={Theme}>
-                <AppBar />
+                <HeaderBar />
+                <GameBox />
             </ThemeProvider>
         </div>
 
