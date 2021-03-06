@@ -80,10 +80,10 @@ class HeaderBar extends React.Component {
             <React.Fragment>
                 <CssBaseline/>
                 <AppBar>
-                    <div>
+                    <div  style ={{backgroundColor:'#000000'}}>
                         <Toolbar>
                             <div style={{minWidth: '300px', display: 'flex', display: 'flex',
-                                flexFlow:'row wrap',}}>
+                                flexFlow:'row wrap'}}>
                                 <Link to ="/">
                                 <Typography style={{minWidth: '200px', fontSize: '35px',  float: 'left'}}>Cards Against
                                     Cornellians</Typography>

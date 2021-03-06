@@ -16,9 +16,11 @@ function App() {
                     {/* <Route exact path="/Join" component={JoinGame}></Route>
                     <Route path="/Start/:gameId" component={StartGame}></Route>
                     <Route exact path="/Contribute" component={Contribute}></Route> */}
+                    <footer></footer>
                 </div>
           </Switch>
       </Router>
+      
   );
 }
 

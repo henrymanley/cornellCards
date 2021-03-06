@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto+Mono:wght@300&display=swap');
 
 .App {
-  background-color: darkgray;
+  background-color: #FFFFFC;
   color: black;
   font-family: 'Roboto Mono', monospace;
 }
