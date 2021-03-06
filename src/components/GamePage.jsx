@@ -22,7 +22,9 @@ export default function GamePage() {
     }
 
     const joinGame = async (gameId) => {
-      const gameDoc = await firebase.firestore().collection('gameSessions').where('pin', '==', 'gameId').get()
+      const gameDoc = await firebase.firestore().collection('gameSessions').where('pin', '==', gameId).get()
+      console.log(gameDoc)
+      console.log(gameDoc)
       if (gameDoc.empty){
         console.log('invalid game pin')
       }
@@ -39,6 +41,9 @@ export default function GamePage() {
     if (!gameId){
       gameId = createId()
       createGame(gameId)
+    }
+    else{
+      joinGame(gameId)
     }
 
     

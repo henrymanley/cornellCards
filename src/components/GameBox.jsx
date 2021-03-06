@@ -10,7 +10,7 @@ export default function GameBox() {
         borderRadius:'30px', margin:'auto', height: '250px', maxWidth:'500px',
         padding:'30px', alignItems:'center', marginTop:'50px', boxShadow: '5px 5px 10px'}}>
             <div style={{width:'100%', margins:'auto'}}>
-            <form style ={{width: "80%", padding: "12px 20px", boxSizing: "border-box", 
+            <form  action="/pin" style ={{width: "80%", padding: "12px 20px", boxSizing: "border-box", 
             borderRadius:'35px', height: '10em', height: '200px',fontSize:'14pt'}}>
                 <h1><b>Join Game</b></h1>
                 <input type="text" name="pin" placeholder = "Enter Pin" />
