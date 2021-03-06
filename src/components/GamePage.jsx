@@ -30,7 +30,7 @@ export default function GamePage() {
         const newParticipantDocRef = gameDoc.collection('participants').doc()
         await newParticipantDocRef.set({'cards': {}, 'name': 'Henry', 'score': 0})
         await gameDoc.update({'participants': firebase.firestore.FieldValue.arrayUnion({'id': newParticipantDocRef.id, 'name': 'Henry'})})
-
+        console.log('Joined game! Host: ' + gameDoc.data().host.name)
       }
     }
 
