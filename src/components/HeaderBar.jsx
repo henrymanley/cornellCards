@@ -96,7 +96,7 @@ class HeaderBar extends React.Component {
                                         minWidth: '400px',
                                         display: 'inline-flex'
                                     }}>
-                                        <Link to = "./Start">
+                                        <Link to = "./game">
                                             <Typography variant="h6" style={{
                                                 padding: '10px',
                                                 display: 'inline',
