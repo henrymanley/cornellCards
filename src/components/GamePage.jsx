@@ -26,7 +26,6 @@ export default function GamePage() {
 
     useEffect(async () => {
 
-<<<<<<< HEAD
       if (data.gameId) {
         const gameDocQuery = await firebase.firestore().collection('gameSessions').where('pin', '==', gameId).get()
         console.log(gameDocQuery)
@@ -61,33 +60,6 @@ export default function GamePage() {
         
       }
     }, [gameId])
-=======
-    const joinGame = async (gameId) => {
-      const gameDocQuery = await firebase.firestore().collection('gameSessions').where('pin', '==', gameId).get()
-      console.log(gameDocQuery)
-      if (gameDocQuery.empty){
-        console.log('invalid game pin')
-      }
-      else{
-        const gameDoc = gameDocQuery.docs[0]
-        const newParticipantDocRef = gameDoc.ref.collection('participants').doc()
-        await newParticipantDocRef.set({'cards': {}, 'name': 'Henry', 'score': 0})
-        await gameDoc.ref.update({'participants': firebase.firestore.FieldValue.arrayUnion({'id': newParticipantDocRef.id, 'name': 'Henry'})})
-        console.log('Joined game! Host: ' + gameDoc.data().host.name)
-      }
-    }
-
-    const history = useHistory();
-    var {gameId} = useParams()
-    if (!gameId){
-      gameId = createId()
-      createGame(gameId)
-      history.replace('/game/' + gameId)
-    }
-    else{
-      joinGame(gameId)
-    }
->>>>>>> b15459cb848e6b8d0a48768bc5eb29fb7f7128f5
 
     
     useEffect(() => {
