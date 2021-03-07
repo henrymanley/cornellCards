@@ -18,7 +18,9 @@ export default function WelcomePage() {
                 <HeaderBar />
                 <GameBox />
             </ThemeProvider>
+            <footer style={{position: 'absolute', bottom: '0'}}>Hello</footer>
         </div>
+        
 
     );
 }
