@@ -10,7 +10,7 @@ import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Zoom from '@material-ui/core/Zoom';
 import '../css/App.css';
-import {BrowserRouter as Router, Link, withRouter} from "react-router-dom";
+import {Link, withRouter} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
 const Theme = createMuiTheme({
     typography: {
         fontFamily: [
-            'Roboto Mon', 'monospace',
+          "JetBrains Mono",
         ].join(','),
     },});
 
@@ -80,25 +80,23 @@ class HeaderBar extends React.Component {
             <React.Fragment>
                 <CssBaseline/>
                 <AppBar>
-                    <div  style ={{backgroundColor:'#000000'}}>
+                    <div className="App-Bar" style ={{backgroundColor:'#000000'}}>
                         <Toolbar>
-                            <div style={{minWidth: '300px', display: 'flex', display: 'flex',
-                                flexFlow:'row wrap'}}>
+                            <div style={{minWidth: '300px', flexFlow:'row wrap'}}>
                                 <Link to ="/">
-                                <Typography style={{minWidth: '200px', fontSize: '35px',  float: 'left'}}>Cards Against
+                                <Typography style={{minWidth: '200px', fontSize: '30px',  float: 'left', fontFamily:'JetBrains Mono'}}>Cards Against
                                     Cornellians</Typography>
                                 </Link>
                                 <ThemeProvider theme={Theme}>
                                     <div style={{
-                                        marginRight: '0px',
-                                        position: 'absolute', top: '15px',
-                                        right: '15px',
-                                        minWidth: '400px',
+                                        top: '25px',
+                                        minWidth: '500px',
                                         display: 'inline-flex'
                                     }}>
                                         <Link to = "./game">
                                             <Typography variant="h6" style={{
                                                 padding: '10px',
+                                                position:'relative',
                                                 display: 'inline',
                                                 marginRight: '30px',
                                                 minWidth: '20px',
@@ -117,10 +115,14 @@ class HeaderBar extends React.Component {
                                        </Link>
                                         <Link to="./Contribute">
                                             <Typography variant="h6" style={{
-                                                padding: '10px',
+                                                paddingLeft: '13px',
+                                                paddingRight: '13px',
+                                                paddingTop:'7px',
+                                                paddingBottom:'7px',
                                                 display: 'inline',
                                                 minWidth: '20px',
-                                                borderRadius: '30px'
+                                                borderRadius: '30px',
+                                                backgroundColor:'red'
                                             }}> <i>Contribute</i></Typography>
                                         </Link>
 

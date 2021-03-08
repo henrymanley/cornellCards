@@ -15,10 +15,50 @@ export default function WelcomePage() {
     return (
         <div>
             <ThemeProvider theme={Theme}>
-                <HeaderBar />
+                <header> <HeaderBar /></header>
+                <div className="snowflakes" aria-hidden="true">
+                    <div className="snowflake">
+                        ❅
+                    </div>
+                    <div className="snowflake">
+                        ❅
+                    </div>
+                    <div className="snowflake">
+                        ❆
+                    </div>
+                    <div className="snowflake">
+                        ❄
+                    </div>
+                    <div className="snowflake">
+                        ❅
+                    </div>
+                    <div className="snowflake">
+                        ❆
+                    </div>
+                    <div className="snowflake">
+                        ❄
+                    </div>
+                    <div className="snowflake">
+                        ❅
+                    </div>
+                    <div className="snowflake">
+                        ❆
+                    </div>
+                    <div className="snowflake">
+                        ❄
+                    </div>
+                    <div className="snowflake">
+                        ❆
+                    </div>
+                    <div className="snowflake">
+                        ❆
+                    </div>
+                    <div className="snowflake">
+                        ❆
+                    </div>
+                </div>
                 <GameBox />
             </ThemeProvider>
-            <footer style={{position: 'absolute', bottom: '0'}}>Hello</footer>
         </div>
         
 

@@ -12,11 +12,13 @@ function App() {
       <Router>
           <Switch>
                 <div className="App">
+                    <header/>
                     <Route exact path="/" component={WelcomePage}></Route>
                     <Route path="/game/:gameId?" component={GamePage}></Route>
                     {/* <Route exact path="/Join" component={JoinGame}></Route>
                     <Route path="/Start/:gameId" component={StartGame}></Route>
                     <Route exact path="/Contribute" component={Contribute}></Route> */}
+                    <footer />
                 </div>
           </Switch>
       </Router>
