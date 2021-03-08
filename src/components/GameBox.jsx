@@ -11,12 +11,6 @@ AOS.init({ duration: 1000 });
 
 export default function GameBox() {
 
-    function yourFunction(){
-        var action_src = "http://localhost/test/" + document.getElementsByName("pin")[0].value;
-        var your_form = document.getElementById('your_form');
-        your_form.action = action_src ;
-    }
-
     return (
         
 <div>
@@ -37,7 +31,7 @@ export default function GameBox() {
                 borderRadius: '35px',  fontSize: '14pt'
             }}>
                 <h1><b>Join Game</b></h1>
-                <input type="text" name="pin" placeholder="Enter Pin"/>
+                <input name="search" method="get" action="result_Search.php" placeholder="Enter Pin"/>
                 <input type="submit" value="Submit"
                        style={{backgroundColor: '#FF1B1C', color: 'white', borderRadius: '35px'}}/>
 

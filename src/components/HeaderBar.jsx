@@ -82,10 +82,14 @@ class HeaderBar extends React.Component {
                 <AppBar>
                     <div className="App-Bar" style ={{backgroundColor:'#000000'}}>
                         <Toolbar>
-                            <div style={{minWidth: '300px', flexFlow:'row wrap'}}>
+                            <div style={{minWidth: '300px', flexFlow:'row wrap', flexWrap:'wrap', width:'100%'}}>
                                 <Link to ="/">
-                                <Typography style={{minWidth: '200px', fontSize: '30px',  float: 'left', fontFamily:'JetBrains Mono'}}>Cards Against
-                                    Cornellians</Typography>
+
+                                    <div>
+                                        <Typography style={{minWidth: '200px', fontSize: '30px',  float: 'left', fontFamily:'JetBrains Mono'}}>Cards Against
+                                            Cornellians</Typography>
+                                    </div>
+
                                 </Link>
                                 <ThemeProvider theme={Theme}>
                                     <div style={{
